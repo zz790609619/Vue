@@ -3,7 +3,7 @@ const api = {
   // 设置的请求host地址
   HOST,
   // 获取位置
-  GET_ADRESS: `${HOST}/vue/server/home.php?inAjax=1&do=getAdress`,
+  GET_ADRESS: `${HOST}/getAdress`,
 
   // 获取天气信息
   GET_WEATHER: `${HOST}/vue/server/home.php?inAjax=1&do=getWeather`,
@@ -20,12 +20,6 @@ const api = {
   // 获取笑话数据
   GET_JOKE: `${HOST}/vue/server/home.php?inAjax=1&do=getJokeInfo`,
 
-  // 获取个人的标签
-  GET_TIPS_INFO: `${HOST}/vue/server/home.php?inAjax=1&do=getTipsInfo`,
-
-  // 更新个人标签
-  UPDATE_TIPS_INFO: `${HOST}/vue/server/home.php?inAjax=1&do=updataTipsInfo`,
-
   // 获取新闻信息
   GET_NEWS_INFO: `${HOST}/vue/server/home.php?inAjax=1&do=getNewsInfo`,
 
@@ -35,17 +29,8 @@ const api = {
   // 获取资源信息中视频地址
   GET_RESOURCE_VIDEO: `${HOST}/vue/server/home.php?inAjax=1&do=getResourceVideo`,
 
-  // 获取建议和意见的内容
-  GET_SUGGEST_INFO: `${HOST}/vue/server/home.php?inAjax=1&do=getSuggestInfo`,
-
-  // 提交建议和意见
-  SUB_SUGGEST_INFO: `${HOST}/vue/server/home.php?inAjax=1&do=submitSuggestInfo`,
-
   // 获取网址更新内容
   GET_WEB_UPDATE_INFO: `${HOST}/vue/server/home.php?inAjax=1&do=getUpdateInfo`,
-
-  // 获取作品列表
-  GET_WORKS_LIST: `${HOST}/vue/server/home.php?inAjax=1&do=getWorksList`,
 
   // 判断是否要更新 在弹窗提示的时候使用
   IS_NEED_UPDATE: `${HOST}/isNeedUpdate`,

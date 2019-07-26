@@ -28,7 +28,6 @@ const MusicPlayList = r => require.ensure([], () => r(require('@/components/musi
 // import MusicPlayList from '@/components/music/playlist/playlist.vue'
 const MusicToplist = r => require.ensure([], () => r(require('@/components/music/toplist/toplist.vue')), 'toplist')
 // import MusicToplist from '@/components/music/toplist/toplist.vue'
-
 const Resources = r => require.ensure([], () => r(require('@/components/about/resources/resources.vue')), 'resources')
 // import Suggest from '@/components/resources/resources.vue'  资源搜索
 const DownloadAudio = r => require.ensure([], () => r(require('@/components/about/resources/audio/audio.vue')), 'audio')

@@ -51,7 +51,6 @@ export default {
       if (isShowBingImage) {
         getBingInfo(api, 0)
       } else {
-				console.log(2)
         // 自定义图片  默认是我设置的图片
         if ((hasFixedImageBg === null || hasFixedImageBg === '' || JSON.parse(hasFixedImageBg).type === 'bing')) {
            let index = store.getters.getFixedImageInfo.index
@@ -101,9 +100,9 @@ export default {
         if (res.data) {
           store.dispatch({
             type: 'set_Place',
-            data: res.data.data
+            data: res.data
           })
-          this.getWeather(res.data.data.city)
+          this.getWeather(res.data.city)
         }
       }, (err) => {
         alert(err)

@@ -15,11 +15,9 @@ export const Utils = {
 	// text： 内容;
 	// isOneLine：  是否一行显示（1行相当于3行log的高度 所以不能换行）;
 	// author：用户名称 ；
-	setConsole (text = 'this is console!', isOneLine = 1, author = 'ww') {
+	setConsole (text = '欢迎来到我的小天地!', isOneLine = 1, author = 'ww') {
 		if (isOneLine) {
-			console.log('')
-			console.log('HelloQ')
-			console.log('')
+			console.log('打开这个你就是我的人啦~')
 		} else {
 			console.log('HelloQ')
 					}

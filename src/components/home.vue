@@ -30,7 +30,7 @@
             <i :class="isFullScreen ? 'icon-canclefullscreen' : 'icon-fullscreen'" :title="isFullScreen ? '取消全屏' : '全屏'"></i>
           </div>
         </div>
-        <span class="tips" :title="bingImageDisc">每日一图由 {{bingImageDisc}} 提供 | Copyright © 2018~{{new Date().getFullYear()}}
+        <span class="tips" :title="bingImageDisc">2018.07.28-{{new Date().getFullYear()+'.'+(new Date().getMonth()+1)+'.'+new Date().getDate()}}
           <span v-if="globalInfo.isHigher768">
             <a href="http://www.baidu.com/" target="_black" title="能喜欢你我很开心" style="width:100%;height:auto">能喜欢你我很开心</a>
           </span>
@@ -97,7 +97,13 @@ export default {
     showAllList () {
       this.isShowAllList = true
     },
-
+		open1 () {
+       //  const h = this.$createElement;
+       // this.$notify({
+       //    title: '标题名称',
+       //    message: h('i', { style: 'color: teal'}, '这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案')
+       //  });
+      },
     playpause () {
       var globalAudioEle = store.getters.getAudioEle
       if (!globalAudioEle.paused) {

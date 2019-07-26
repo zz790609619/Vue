@@ -110,7 +110,6 @@ export default {
       return /iPhone|iPod/i.test(navigator.userAgent)
     },
     getUserInfo () {
-			console.log(store.getters.getUserInfo)
       return store.getters.getUserInfo
     }
   },
